@@ -1,0 +1,73 @@
+<!--2017038082_반용빈-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: silver;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  background-color: lightblue;
+  border-radius: 15px;
+}
+h2
+{
+color :black;
+text-align:center;
+background-color:sliver;
+}
+
+h3{
+text-align:center;
+background-color:white;
+border-radius: 15px;
+font-size:40px;
+}
+.button {
+	background-color : white;
+    border-color: skyblue;
+    color : skyblue;
+    padding :15px 30px;
+    text-align :left;
+    text-decoration:none;
+    display: inline-block;
+    font-size:30px;
+    margin : 5px 3px;
+    cursor: pointer;
+}
+
+
+.button:hover{
+color : white;
+background-color:skyblue;
+<!-- 버튼에 마우스 가져다 대면 색이 바뀜 -->
+}
+p {
+  font-family: verdana;
+  font-size: 24px;
+}
+<!-- css지정하기 -->
+</style>
+<title> 건의사항 작성 <!-- 홈페이지 이름 --></title>
+</head>
+<body>
+
+<h3>개선 및 건의 사항</h3>
+<p>
+<form action="write_action.php" method="post">
+        <h1><b>식당이름</b><h1>
+        <h2><input name="res_name" type="text" style = "text-align:left; 			          width:550px; height : 30px"><br></h2>
+        <h1><b>내용</b><h1><br>
+        <textarea rows = "30" cols = "110" ></textarea>
+        <br><br>
+        <input type="submit" class = "button" value="등록">
+        <input type="reset" class = "button" value = "초기화">
+        <input type="button" class = "button" value = "취소">
+    </form>
+</p>
+
+</body>
+</html>
